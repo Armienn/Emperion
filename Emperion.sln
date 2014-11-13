@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emperion", "Emperion\Emperion.csproj", "{190349A6-E671-4D44-BD17-B3A84E37C2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmperionGUI", "EmperionGUI\EmperionGUI.csproj", "{BACB6C75-EF1D-47F4-930C-8C91EA45FD00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{190349A6-E671-4D44-BD17-B3A84E37C2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190349A6-E671-4D44-BD17-B3A84E37C2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190349A6-E671-4D44-BD17-B3A84E37C2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190349A6-E671-4D44-BD17-B3A84E37C2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACB6C75-EF1D-47F4-930C-8C91EA45FD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACB6C75-EF1D-47F4-930C-8C91EA45FD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACB6C75-EF1D-47F4-930C-8C91EA45FD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACB6C75-EF1D-47F4-930C-8C91EA45FD00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
