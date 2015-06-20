@@ -283,5 +283,4 @@ namespace Emperion
 	}
 
 	#endregion
-	//Useless test comment
 }
