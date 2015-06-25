@@ -1,0 +1,3 @@
+[submodule "NeaKitSharp"]
+	path = NeaKitSharp
+	url = https://github.com/Armienn/NeaKitSharp.git
