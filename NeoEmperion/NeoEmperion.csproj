@@ -40,9 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="World\Areas\Area.cs" />
+    <Compile Include="World\Areas\Continent.cs" />
+    <Compile Include="World\Generation\Eon.cs" />
+    <Compile Include="World\Parameters.cs" />
+    <Compile Include="World\SpaceTime.cs" />
+    <Compile Include="World\World.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="World\" />
+    <ProjectReference Include="..\NeaKitSharp\NeaKit\NeaKit.csproj">
+      <Project>{a5ee407a-64bc-40b2-932d-c1cb11a8e21b}</Project>
+      <Name>NeaKit</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
