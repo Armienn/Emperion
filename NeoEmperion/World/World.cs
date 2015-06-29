@@ -8,9 +8,9 @@ using NeoEmperion.World.Generation;
 namespace NeoEmperion.World {
 	public class World {
 		public Parameters Parameters;
-		//public Random random;
 		public Planet planet;
 
+		public World() : this(30, 30, 10, new Random().Next()) { }
 		public World(int x, int y, int z) : this(x, y, z, new Random().Next()) { }
 
 		public World(int x, int y, int z, int seed) {
@@ -20,8 +20,10 @@ namespace NeoEmperion.World {
 			Parameters.X = x;
 			Parameters.Y = y;
 			Parameters.Z = z;
-			planet = new Planet(x, y, z);
-			//generere verden
+			planet = new Planet(Parameters);
+		}
+
+		public void StartGeneration() {
 			Eon.GenerateContinents(planet, Parameters);
 		}
 	}

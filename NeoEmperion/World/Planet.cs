@@ -14,8 +14,8 @@ namespace NeoEmperion.World {
 		public int Y { get { return Map.GetLength(1); } }
 		public int Z { get { return Map.GetLength(2); } }
 
-		public Planet(int x, int y, int z) {
-			Map = new Area[x, y, z];
+		public Planet(Parameters parameters) {
+			Map = new Area[parameters.X, parameters.Y, parameters.Z];
 		}
 	}
 }
