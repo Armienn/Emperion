@@ -44,8 +44,8 @@
     <Compile Include="World\Areas\Continent.cs" />
     <Compile Include="World\Generation\Eon.cs" />
     <Compile Include="World\Parameters.cs" />
-    <Compile Include="World\SpaceTime.cs" />
     <Compile Include="World\World.cs" />
+    <Compile Include="World\Planet.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NeaKitSharp\NeaKit\NeaKit.csproj">
