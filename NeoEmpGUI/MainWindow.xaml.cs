@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NeaKit.Geometry2D.Hex;
+using NeoEmperion;
 
 namespace NeoEmpGUI {
 	/// <summary>

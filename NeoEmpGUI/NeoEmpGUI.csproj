@@ -93,6 +93,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NeaKitSharp\NeaKit\NeaKit.csproj">
+      <Project>{a5ee407a-64bc-40b2-932d-c1cb11a8e21b}</Project>
+      <Name>NeaKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NeoEmperion\NeoEmperion.csproj">
+      <Project>{bd1556d7-b9ce-4d3a-8df1-5dd4060cdbca}</Project>
+      <Name>NeoEmperion</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
