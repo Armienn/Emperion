@@ -13,15 +13,33 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NeaKit.Geometry2D.Hex;
-using NeoEmperion;
+using NeoEmperion.World;
 
 namespace NeoEmpGUI {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
 	public partial class MainWindow : Window {
+		World world;
+
+		InfoControl infoControl;
+		ParametersControl parametersControl;
+
 		public MainWindow() {
 			InitializeComponent();
+			infoControl = new InfoControl();
+			parametersControl = new ParametersControl();
+			MainContent.Children.Add(infoControl);
+		}
+
+		private void ViewInfo_Click(object sender, RoutedEventArgs e) {
+			MainContent.Children.Clear();
+			MainContent.Children.Add(infoControl);
+		}
+
+		private void ViewParameters_Click(object sender, RoutedEventArgs e) {
+			MainContent.Children.Clear();
+			MainContent.Children.Add(parametersControl);
 		}
 	}
 }
