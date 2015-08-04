@@ -9,8 +9,24 @@
 		<StackPanel.Background>
 			<SolidColorBrush Color="#FFF1EDED"/>
 		</StackPanel.Background>
-		<Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,5" VerticalAlignment="Top" Width="75"/>
+		<Label Content="Parameters"/>
 		<Separator />
-		<Button Content="Button" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="75"/>
+		<Grid>
+			<Label Content="Seed:"/>
+			<TextBox Height="23" Margin="50,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+		</Grid>
+		<Grid>
+			<Label Content="X:"/>
+			<TextBox Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+		</Grid>
+		<Grid>
+			<Label Content="Y:"/>
+			<TextBox Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+		</Grid>
+		<Grid>
+			<Label Content="Z:"/>
+			<TextBox Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+		</Grid>
+		<Button Content="Generate World" Margin="10,10,10,0"/>
 	</StackPanel>
 </UserControl>

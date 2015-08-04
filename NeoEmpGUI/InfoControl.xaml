@@ -5,10 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="200">
-	<Grid>
-		<Grid.Background>
+	<StackPanel>
+		<StackPanel.Background>
 			<SolidColorBrush Color="#FFF1EDED"/>
-		</Grid.Background>
-		<Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
-	</Grid>
+		</StackPanel.Background>
+		<Label Content="Information"/>
+		<Separator />
+		<Grid>
+			<Button Content="Button" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="75"/>
+		</Grid>
+	</StackPanel>
 </UserControl>

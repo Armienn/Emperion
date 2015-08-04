@@ -18,8 +18,11 @@ namespace NeoEmpGUI {
 	/// Interaction logic for InfoControl.xaml
 	/// </summary>
 	public partial class InfoControl : UserControl {
-		public InfoControl() {
+		MainWindow main;
+
+		public InfoControl(MainWindow mainwindow) {
 			InitializeComponent();
+			main = mainwindow;
 		}
 	}
 }

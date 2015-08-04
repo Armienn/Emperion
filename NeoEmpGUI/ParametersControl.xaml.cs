@@ -18,8 +18,24 @@ namespace NeoEmpGUI {
 	/// Interaction logic for ParametersControl.xaml
 	/// </summary>
 	public partial class ParametersControl : UserControl {
-		public ParametersControl() {
+		MainWindow main;
+
+		public ParametersControl(MainWindow mainwindow) {
 			InitializeComponent();
+			main = mainwindow;
+		}
+
+		private void TextBoxEnsureIntegers(object sender, TextChangedEventArgs e) {
+			TextBox box = sender as TextBox;
+			if (box != null) {
+				string tmp = box.Text;
+				foreach (char c in box.Text.ToCharArray()) {
+					if (!System.Text.RegularExpressions.Regex.IsMatch(c.ToString(), "^[0-9]*$")) {
+						tmp = tmp.Replace(c.ToString(), "");
+					}
+				}
+				box.Text = tmp;
+			}
 		}
 	}
 }

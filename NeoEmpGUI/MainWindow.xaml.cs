@@ -20,15 +20,15 @@ namespace NeoEmpGUI {
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
 	public partial class MainWindow : Window {
-		World world;
+		public World world;
 
 		InfoControl infoControl;
 		ParametersControl parametersControl;
 
 		public MainWindow() {
 			InitializeComponent();
-			infoControl = new InfoControl();
-			parametersControl = new ParametersControl();
+			infoControl = new InfoControl(this);
+			parametersControl = new ParametersControl(this);
 			MainContent.Children.Add(infoControl);
 		}
 
