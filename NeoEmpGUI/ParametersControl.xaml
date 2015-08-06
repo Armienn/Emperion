@@ -13,20 +13,24 @@
 		<Separator />
 		<Grid>
 			<Label Content="Seed:"/>
-			<TextBox Height="23" Margin="50,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+			<TextBox Name="ParamSeed" Height="23" Margin="50,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
 		</Grid>
 		<Grid>
 			<Label Content="X:"/>
-			<TextBox Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+			<TextBox Name="ParamX" Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
 		</Grid>
 		<Grid>
 			<Label Content="Y:"/>
-			<TextBox Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+			<TextBox Name="ParamY" Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
 		</Grid>
 		<Grid>
 			<Label Content="Z:"/>
-			<TextBox Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+			<TextBox Name="ParamZ" Height="23" Margin="30,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
 		</Grid>
-		<Button Content="Generate World" Margin="10,10,10,0"/>
+		<Grid>
+			<Label Content="Continents:"/>
+			<TextBox Name="ParamContinents" Height="23" Margin="80,2,10,0" TextWrapping="Wrap" TextChanged="TextBoxEnsureIntegers"/>
+		</Grid>
+		<Button Content="Generate World" Margin="10,10,10,0" Click="Generate_Click"/>
 	</StackPanel>
 </UserControl>

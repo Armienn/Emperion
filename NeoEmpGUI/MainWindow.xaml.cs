@@ -41,5 +41,9 @@ namespace NeoEmpGUI {
 			MainContent.Children.Clear();
 			MainContent.Children.Add(parametersControl);
 		}
+
+		public void Generate(NeoEmperion.World.Parameters parameters) {
+			//TODO: implement this
+		}
 	}
 }

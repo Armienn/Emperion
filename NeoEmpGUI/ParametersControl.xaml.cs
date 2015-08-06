@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NeoEmperion;
 
 namespace NeoEmpGUI {
 	/// <summary>
@@ -36,6 +37,16 @@ namespace NeoEmpGUI {
 				}
 				box.Text = tmp;
 			}
+		}
+
+		private void Generate_Click(object sender, RoutedEventArgs e) {
+			NeoEmperion.World.Parameters parameters = new NeoEmperion.World.Parameters();
+			parameters.EonSeed = int.Parse(ParamSeed.Text);
+			parameters.X = int.Parse(ParamX.Text);
+			parameters.Y = int.Parse(ParamY.Text);
+			parameters.Z = int.Parse(ParamZ.Text);
+			parameters.Continents = int.Parse(ParamContinents.Text);
+			main.Generate(parameters);
 		}
 	}
 }
