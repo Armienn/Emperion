@@ -10,17 +10,11 @@ namespace NeoEmperion.World {
 		public Parameters Parameters;
 		public Planet planet;
 
-		public World() : this(30, 30, 10, new Random().Next()) { }
-		public World(int x, int y, int z) : this(x, y, z, new Random().Next()) { }
+		public World() : this(new Parameters(new Random().Next())) { }
 
-		public World(int x, int y, int z, int seed) {
-			Random random = new Random(seed);
-			Parameters.Continents = 8;
-			Parameters.EonSeed = random.Next();
-			Parameters.X = x;
-			Parameters.Y = y;
-			Parameters.Z = z;
-			planet = new Planet(Parameters);
+		public World(Parameters parameters) {
+			Parameters = parameters;
+			planet = new Planet(Parameters); // should this be here?
 		}
 
 		public void StartGeneration() {
