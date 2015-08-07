@@ -11,6 +11,7 @@ namespace NeoEmperion.World.Generation {
 			Random random = new Random(parameters.EonSeed);
 
 			lock (planet) {
+				planet.Continents = new Continent[parameters.Continents];
 				for (int i = 0; i < parameters.Continents; i++) {
 					planet.Continents[i] = new Continent(random.Next(parameters.X), random.Next(parameters.Y));
 				}
